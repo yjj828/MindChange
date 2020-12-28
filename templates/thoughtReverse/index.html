@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ThoughtReverse</title>
+    <style type="text/css">
+        a{
+            text-align: center;
+            font-size: 50px;
+            top: 50%;
+        }
+    </style>
+    <script>
+        function Change(negL, posL){
+            let neg = document.getElementById(negL);
+            neg.style.display = 'none';
+            let pos = document.getElementById(posL);
+            pos.style.display = 'block';
+        }
+    </script>
+</head>
+<body background="{% static 'images/highlands.jpg' %}">
+    <h1 align="center">Reverse Your Negative Thoughts</h1>
+    <div align="center">
+        <a id="negThoughtLabel" style="color:white;"><strong>{{ NegativeThought }}</strong></a><br />
+    </div>
+    <div align="center">
+        <a id="posThoughtLabel" style="color:Pink; display:none"><strong>{{ PositiveThought }}</strong></a><br />
+    </div>
+    <div align="center">
+        <br /><br />
+        <button id="change" style="font-size: 30px" onclick="Change('negThoughtLabel','posThoughtLabel')">Find The Truth</button>
+    </div>
+</body>
+</html>
