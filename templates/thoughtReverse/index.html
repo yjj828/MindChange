@@ -23,16 +23,16 @@
     </script>
 </head>
 <body background="{% static 'images/highlands.jpg' %}">
-    <h1 align="center">Reverse Your Negative Thoughts</h1>
+    <h1 align="center" style="font-size:40px">思绪背后</h1>
     <div align="center">
-        <a id="negThoughtLabel" style="color:white;"><strong>{{ NegativeThought }}</strong></a><br />
+        <a id="negThoughtLabel" style="color:white;line-height:200px;display:block"><strong>{{ NegativeThought }}</strong></a><br />
     </div>
     <div align="center">
-        <a id="posThoughtLabel" style="color:Pink; display:none"><strong>{{ PositiveThought }}</strong></a><br />
+        <a id="posThoughtLabel" style="color:Pink;line-height:200px;display:none"><strong>{{ PositiveThought }}</strong></a><br />
     </div>
     <div align="center">
         <br /><br />
-        <button id="change" style="font-size: 30px" onclick="Change('negThoughtLabel','posThoughtLabel')">Find The Truth</button>
+        <button id="change" style="font-size: 25px" onclick="Change('negThoughtLabel','posThoughtLabel')">换种想法</button>
     </div>
 </body>
 </html>
